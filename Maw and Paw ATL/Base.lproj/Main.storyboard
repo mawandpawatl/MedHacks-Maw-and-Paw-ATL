@@ -37,6 +37,9 @@
                                     <constraint firstAttribute="height" constant="80" id="Yyo-TF-KOk"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="stopButton"/>
+                                <connections>
+                                    <action selector="stopWorkout:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uAt-7o-iLw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3U-Em-fJo">
                                 <rect key="frame" x="20" y="152" width="80" height="80"/>
@@ -70,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="1" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-2T-kYT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fine Points" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-2T-kYT">
                                 <rect key="frame" x="33.5" y="380.5" width="357" height="57.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="357" id="9Lg-rE-HfH"/>
@@ -90,7 +93,7 @@
                                 <color key="textColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose Measurement" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-XU-5Uj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Glucose in Real-tIme" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-XU-5Uj">
                                 <rect key="frame" x="20" y="65.5" width="371" height="31.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31.5" id="59y-HS-SUv"/>
@@ -243,6 +246,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Train" image="icons8-exercise-30" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="pauseWorkoutButton" destination="n3U-Em-fJo" id="BQH-RB-3e9"/>
+                        <outlet property="stopWorkoutButton" destination="JgM-3Z-z5p" id="x3m-Bd-n7w"/>
+                        <outlet property="toggleWorkoutButton" destination="8MQ-wp-oyF" id="OV9-bk-6hM"/>
                         <outlet property="workoutDistanceLabel" destination="r3E-EN-uiW" id="bdE-tB-s5c"/>
                         <outlet property="workoutTimeLabel" destination="bON-rT-d8H" id="rL5-TS-sed"/>
                     </connections>
@@ -296,16 +302,16 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="A5Z-lu-wSl" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="2NT-nu-uyO" kind="relationship" relationship="viewControllers" id="xu0-81-Qar"/>
                         <segue destination="fcP-gc-1CF" kind="relationship" relationship="viewControllers" id="6JF-A0-SXl"/>
                         <segue destination="cib-BS-5YK" kind="relationship" relationship="viewControllers" id="8Ve-WF-D0Z"/>
+                        <segue destination="2NT-nu-uyO" kind="relationship" relationship="viewControllers" id="xu0-81-Qar"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Public-->
+        <!--Community-->
         <scene sceneID="Va3-kO-vRJ">
             <objects>
                 <viewController id="2NT-nu-uyO" sceneMemberID="viewController">
@@ -315,13 +321,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nqt-Mh-0tV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Public" image="icons8-strike-30" id="eUE-h5-Zw0"/>
+                    <tabBarItem key="tabBarItem" title="Community" image="icons8-strike-30" id="eUE-h5-Zw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDo-AT-hD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="772" y="370"/>
         </scene>
-        <!--Cerebral-->
+        <!--Restore-->
         <scene sceneID="A3v-fs-FIE">
             <objects>
                 <viewController id="cib-BS-5YK" sceneMemberID="viewController">
@@ -331,7 +337,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rop-VB-XRf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cerebral" image="icons8-wise-mind-30" id="YBN-ex-Glj"/>
+                    <tabBarItem key="tabBarItem" title="Restore" image="icons8-wise-mind-30" id="YBN-ex-Glj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbb-3H-mH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1E1CD12703696A120A3EDE2 /* Pods_Maw_and_Paw_ATL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FADC8F83E1E93CBA9BB294 /* Pods_Maw_and_Paw_ATL.framework */; };
 		E90822DA233412BD00F70F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822D9233412BD00F70F24 /* AppDelegate.swift */; };
 		E90822DE233412BD00F70F24 /* WorkoutMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822DD233412BD00F70F24 /* WorkoutMapViewController.swift */; };
 		E90822E1233412BD00F70F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90822DF233412BD00F70F24 /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34741E9EF262673B2449EDAC /* Pods-Maw and Paw ATL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maw and Paw ATL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maw and Paw ATL/Pods-Maw and Paw ATL.debug.xcconfig"; sourceTree = "<group>"; };
+		C9FADC8F83E1E93CBA9BB294 /* Pods_Maw_and_Paw_ATL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maw_and_Paw_ATL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB3EEB8B69F918BBBB598BA /* Pods-Maw and Paw ATL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maw and Paw ATL.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maw and Paw ATL/Pods-Maw and Paw ATL.release.xcconfig"; sourceTree = "<group>"; };
 		E90822D6233412BD00F70F24 /* Maw and Paw ATL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maw and Paw ATL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90822D9233412BD00F70F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90822DD233412BD00F70F24 /* WorkoutMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMapViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E1CD12703696A120A3EDE2 /* Pods_Maw_and_Paw_ATL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9282B5E20900B06D22B24887 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34741E9EF262673B2449EDAC /* Pods-Maw and Paw ATL.debug.xcconfig */,
+				CAB3EEB8B69F918BBBB598BA /* Pods-Maw and Paw ATL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5F643D6ACF13F9395410104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FADC8F83E1E93CBA9BB294 /* Pods_Maw_and_Paw_ATL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E90822CD233412BD00F70F24 = {
 			isa = PBXGroup;
 			children = (
 				E90822D8233412BD00F70F24 /* Maw and Paw ATL */,
 				E90822D7233412BD00F70F24 /* Products */,
+				9282B5E20900B06D22B24887 /* Pods */,
+				E5F643D6ACF13F9395410104 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E90822EA233412C300F70F24 /* Build configuration list for PBXNativeTarget "Maw and Paw ATL" */;
 			buildPhases = (
+				2338685547FA8A8F926BC8B9 /* [CP] Check Pods Manifest.lock */,
 				E90822D2233412BD00F70F24 /* Sources */,
 				E90822D3233412BD00F70F24 /* Frameworks */,
 				E90822D4233412BD00F70F24 /* Resources */,
+				2FFBDBE1126C71B286EA9449 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +128,11 @@
 				TargetAttributes = {
 					E90822D5233412BD00F70F24 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +166,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2338685547FA8A8F926BC8B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maw and Paw ATL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FFBDBE1126C71B286EA9449 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Maw and Paw ATL/Pods-Maw and Paw ATL-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maw and Paw ATL/Pods-Maw and Paw ATL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E90822D2233412BD00F70F24 /* Sources */ = {
@@ -288,6 +366,7 @@
 		};
 		E90822EB233412C300F70F24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34741E9EF262673B2449EDAC /* Pods-Maw and Paw ATL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +385,7 @@
 		};
 		E90822EC233412C300F70F24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB3EEB8B69F918BBBB598BA /* Pods-Maw and Paw ATL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
