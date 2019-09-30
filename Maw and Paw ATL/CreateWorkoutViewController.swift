@@ -17,6 +17,8 @@ enum WorkoutState {
     case pause
 }
 
+let timerInterval: TimeInterval = 1.0
+
 class CreateWorkoutViewController: UIViewController {
     
     
@@ -27,6 +29,11 @@ class CreateWorkoutViewController: UIViewController {
     @IBOutlet weak var stopWorkoutButton: UIButton!
     var currentWorkoutState = WorkoutState.inactive
     let locationManager = CLLocationManager()
+    var lastSavedTime: Date?
+    var workoutDuration: TimeInterval = 0.0
+    var workoutTimer: Timer?
+    var workoutDistance: Double = 0.0
+    var lastSavedLocation: CLLocation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +44,7 @@ class CreateWorkoutViewController: UIViewController {
     @IBAction func stopWorkout(_ sender: Any) {
         print("Stop workout button pressed")
         currentWorkoutState = .inactive
+        stopWorkoutTimer()
         updateUserInterface()
     }
     
@@ -48,8 +56,12 @@ class CreateWorkoutViewController: UIViewController {
             requestLocationPermission()
         case .active:
             currentWorkoutState = .inactive
+            stopWorkoutTimer()
         case .pause:
             currentWorkoutState = .active
+            resumeWorkoutTimer()
+            
+            
         }
         updateUserInterface()
     }
@@ -59,6 +71,8 @@ class CreateWorkoutViewController: UIViewController {
             print("Location services are available")
             locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
             locationManager.distanceFilter = 9.0 //meters...or approximately 10 football yards
+            locationManager.pausesLocationUpdatesAutomatically = true
+            locationManager.allowsBackgroundLocationUpdates = true
             locationManager.delegate = self
             switch CLLocationManager.authorizationStatus(){
             case .notDetermined:
@@ -87,7 +101,39 @@ class CreateWorkoutViewController: UIViewController {
         currentWorkoutState = .active
         UserDefaults.standard.setValue(true, forKey: "isConfigured")
         UserDefaults.standard.synchronize()
+        workoutDuration = 0.0
+        workoutTimer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(updateWorkoutData), userInfo: nil, repeats: true)
         locationManager.startUpdatingLocation()
+    }
+    
+    @objc func updateWorkoutData(){
+        let now = Date()
+        if let lastTime = lastSavedTime {
+            self.workoutDuration += now.timeIntervalSince(lastTime)
+        }
+        self.workoutDuration += timerInterval
+        workoutTimeLabel.text = stringFromTime(timeInterval: self.workoutDuration)
+        //workoutTimeLabel.text = String(self.workoutDuration)
+        workoutDistanceLabel.text = String(format: "%.2f meters", arguments: [workoutDistance])
+    }
+    
+    func stringFromTime(timeInterval: TimeInterval) -> String{
+        let integerDuration = Int(timeInterval)
+        let seconds = integerDuration % 60
+        let minutes = (integerDuration / 60) % 60
+        let hours = (integerDuration / 3600)
+        //let fractionOfSeconds = Double((seconds * 1000)).truncatingRemainder(dividingBy: 0.60000)
+        let strMinutes = String(format: "%02d", minutes)
+        let strSeconds = String(format: "%02d", seconds)
+        //let strFraction = String(format: "%02d", fractionOfSeconds)
+        //print(fractionOfSeconds)
+        
+        
+        if hours > 0 {
+            return String("\(hours):\(strMinutes):\(strSeconds)")
+        } else {
+            return String("00:\(strMinutes):\(strSeconds)")
+        }
     }
     
     func presentPermissionErrorAlert(){
@@ -119,8 +165,31 @@ class CreateWorkoutViewController: UIViewController {
     
     @IBAction func pauseWorkout(){
         print("Pause workout button pressed")
-        currentWorkoutState = .pause
-        updateUserInterface()
+        
+        
+        switch currentWorkoutState {
+        case .pause:
+            startWorkout()
+            updateUserInterface()
+        case .active:
+            currentWorkoutState = .pause
+            stopWorkoutTimer()
+            updateUserInterface()
+        default:
+            print("pauseWorkout() called out of context!")
+        }
+    }
+    
+    func stopWorkoutTimer(){
+        workoutTimer?.invalidate()
+        lastSavedTime = nil
+    }
+    
+   
+    
+    func resumeWorkoutTimer(){
+        lastSavedTime = nil
+        workoutTimer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(updateWorkoutData), userInfo: nil, repeats: true)
     }
     
     func updateUserInterface(){
@@ -181,6 +250,11 @@ extension CreateWorkoutViewController: CLLocationManagerDelegate {
             print("Unable to read most recent location")
             return
         }
+        if let savedLocation = lastSavedLocation{
+            let distanceDelta = savedLocation.distance(from: mostRecentLocation)
+            workoutDistance += distanceDelta
+        }
+        lastSavedLocation = mostRecentLocation
         print("Most recent location: \(String.init(describing: mostRecentLocation))")
     }
 }

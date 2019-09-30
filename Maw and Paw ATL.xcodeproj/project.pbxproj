@@ -15,6 +15,7 @@
 		E90822E6233412C300F70F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90822E4233412C300F70F24 /* LaunchScreen.storyboard */; };
 		E90822EE2337D00000F70F24 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822ED2337D00000F70F24 /* DesignableView.swift */; };
 		E90822F6233F105700F70F24 /* CreateWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822F5233F105700F70F24 /* CreateWorkoutViewController.swift */; };
+		E90822FA23420D9C00F70F24 /* WorkoutDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822F923420D9B00F70F24 /* WorkoutDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E90822E7233412C300F70F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90822ED2337D00000F70F24 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		E90822F5233F105700F70F24 /* CreateWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutViewController.swift; sourceTree = "<group>"; };
+		E90822F923420D9B00F70F24 /* WorkoutDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				E90822ED2337D00000F70F24 /* DesignableView.swift */,
 				E90822DD233412BD00F70F24 /* WorkoutMapViewController.swift */,
 				E90822DF233412BD00F70F24 /* Main.storyboard */,
+				E90822F923420D9B00F70F24 /* WorkoutDataManager.swift */,
 				E90822F5233F105700F70F24 /* CreateWorkoutViewController.swift */,
 				E90822E2233412C300F70F24 /* Assets.xcassets */,
 				E90822E4233412C300F70F24 /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 			files = (
 				E90822EE2337D00000F70F24 /* DesignableView.swift in Sources */,
 				E90822DE233412BD00F70F24 /* WorkoutMapViewController.swift in Sources */,
+				E90822FA23420D9C00F70F24 /* WorkoutDataManager.swift in Sources */,
 				E90822F6233F105700F70F24 /* CreateWorkoutViewController.swift in Sources */,
 				E90822DA233412BD00F70F24 /* AppDelegate.swift in Sources */,
 			);
