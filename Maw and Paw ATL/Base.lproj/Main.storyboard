@@ -23,10 +23,10 @@
                                 <viewLayoutGuide key="safeArea" id="xbS-ae-Gw2"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                        <color key="value" red="0.42745098039215684" green="0.83529411764705885" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
-                                        <color key="value" red="0.12941176470588234" green="0.57647058823529407" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="80" id="IvX-KE-LBc"/>
                                     <constraint firstAttribute="height" constant="80" id="Yyo-TF-KOk"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="stopButton"/>
+                                <state key="normal" title="Button" image="stopButton-1"/>
                                 <connections>
                                     <action selector="stopWorkout:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uAt-7o-iLw"/>
                                 </connections>
@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="80" id="fYV-Bd-Gj7"/>
                                     <constraint firstAttribute="height" constant="80" id="hLW-RN-9YO"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="pauseButton"/>
+                                <state key="normal" title="Button" image="pauseButton-1"/>
                                 <connections>
                                     <action selector="pauseWorkout" destination="9pv-A4-QxB" eventType="touchUpInside" id="7fr-Ut-OLk"/>
                                 </connections>
@@ -57,7 +57,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="oHv-UN-P8O"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="playButton"/>
+                                <state key="normal" title="Button" image="playButton-1"/>
                                 <connections>
                                     <action selector="toggleWorkout" destination="9pv-A4-QxB" eventType="touchUpInside" id="MQu-GV-1Or"/>
                                 </connections>
@@ -69,7 +69,7 @@
                                     <constraint firstAttribute="height" constant="67" id="809-0C-oQd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="49"/>
-                                <color key="textColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="1" height="2"/>
                             </label>
@@ -80,7 +80,7 @@
                                     <constraint firstAttribute="height" constant="57.5" id="q8d-aZ-03E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="42"/>
-                                <color key="textColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Pace" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-R9-5fk">
@@ -90,7 +90,7 @@
                                     <constraint firstAttribute="width" constant="201" id="Rom-72-AXE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="30"/>
-                                <color key="textColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Glucose in Real-tIme" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-XU-5Uj">
@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="width" constant="371" id="vJK-tV-bfp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="23"/>
-                                <color key="textColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.77421432733535767" green="0.24217399954795837" blue="0.16317155957221985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="169 mg/dL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y5-MM-VFf">
@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="width" constant="371" id="qzP-Y1-CY6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="23"/>
-                                <color key="textColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.92148774862289429" green="0.92162030935287476" blue="0.92145884037017822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00m" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-EN-uiW">
@@ -120,7 +120,7 @@
                                     <constraint firstAttribute="height" constant="48" id="EHA-EL-xyH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.98161798715591431" green="0.97238928079605103" blue="0.31561261415481567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Steps" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5E-06-0i8">
@@ -130,7 +130,7 @@
                                     <constraint firstAttribute="height" constant="48" id="vbJ-ch-g9M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 m/s" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krR-YZ-18Z">
@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="width" constant="165" id="qcF-Hk-vYj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Floors" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcs-Fz-4ZT">
@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="48" id="kgJ-ol-rMG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bON-rT-d8H">
@@ -160,11 +160,11 @@
                                     <constraint firstAttribute="width" constant="374" id="bYo-Og-Wdv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="55"/>
-                                <color key="textColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="6" height="6"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mawAndPawLogoTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-z2-P2i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="africanPaw" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-z2-P2i">
                                 <rect key="frame" x="20" y="558" width="374" height="255"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="L88-zi-TY3"/>
@@ -173,7 +173,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeI-qo-p6k">
                                 <rect key="frame" x="127" y="446" width="5" height="48"/>
-                                <color key="backgroundColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="5" id="D83-B9-RZS"/>
                                     <constraint firstAttribute="height" constant="48" id="FHg-hl-bpA"/>
@@ -181,7 +181,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQx-U4-4HB">
                                 <rect key="frame" x="275" y="446" width="5" height="48"/>
-                                <color key="backgroundColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="5fH-pO-L5U"/>
                                     <constraint firstAttribute="width" constant="5" id="Kdj-Ay-Xtz"/>
@@ -296,8 +296,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.70196078429999997" green="0.070588235289999995" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -343,7 +343,7 @@
             </objects>
             <point key="canvasLocation" x="1551" y="370"/>
         </scene>
-        <!--Glucose Appraisals-->
+        <!--Food Appraisal-->
         <scene sceneID="lZn-Kv-yKA">
             <objects>
                 <viewController id="fcP-gc-1CF" sceneMemberID="viewController">
@@ -381,7 +381,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qq0-bd-T8F"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Glucose Appraisals" image="icons8-healthy-food-30" id="U9b-sC-fp5"/>
+                    <tabBarItem key="tabBarItem" title="Food Appraisal" image="icons8-healthy-food-30" id="U9b-sC-fp5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpZ-m6-Zde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,9 +396,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yfA-r6-OA8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.98161798720000004" green="0.97238928079999998" blue="0.31561261419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -412,14 +412,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="africanPaw" width="566" height="567"/>
         <image name="icons8-exercise-30" width="30" height="30"/>
         <image name="icons8-healthy-food-30" width="30" height="30"/>
         <image name="icons8-map-pinpoint-30" width="30" height="30"/>
         <image name="icons8-strike-30" width="30" height="30"/>
         <image name="icons8-wise-mind-30" width="30" height="30"/>
-        <image name="mawAndPawLogoTransparent" width="794" height="567"/>
-        <image name="pauseButton" width="474" height="474"/>
-        <image name="playButton" width="446" height="447"/>
-        <image name="stopButton" width="474" height="474"/>
+        <image name="pauseButton-1" width="289" height="289"/>
+        <image name="playButton-1" width="289" height="289"/>
+        <image name="stopButton-1" width="289" height="289"/>
     </resources>
 </document>
