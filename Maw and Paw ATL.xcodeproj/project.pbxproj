@@ -16,6 +16,11 @@
 		E90822EE2337D00000F70F24 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822ED2337D00000F70F24 /* DesignableView.swift */; };
 		E90822F6233F105700F70F24 /* CreateWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822F5233F105700F70F24 /* CreateWorkoutViewController.swift */; };
 		E90822FA23420D9C00F70F24 /* WorkoutDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90822F923420D9B00F70F24 /* WorkoutDataManager.swift */; };
+		E9229DDD2364EBF200C07E2D /* NewDiningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9229DDB2364EBF200C07E2D /* NewDiningTableViewCell.swift */; };
+		E9229DDE2364EBF200C07E2D /* NewDiningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9229DDC2364EBF200C07E2D /* NewDiningTableViewCell.xib */; };
+		E9229DE02364FF4300C07E2D /* FetchDiningRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9229DDF2364FF4300C07E2D /* FetchDiningRestaurantsViewController.swift */; };
+		E9229DE22365207400C07E2D /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9229DE12365207400C07E2D /* CellData.swift */; };
+		E92A1B71234CF369004D63EC /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A1B70234CF369004D63EC /* CommunityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		E90822ED2337D00000F70F24 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		E90822F5233F105700F70F24 /* CreateWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutViewController.swift; sourceTree = "<group>"; };
 		E90822F923420D9B00F70F24 /* WorkoutDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataManager.swift; sourceTree = "<group>"; };
+		E9229DDB2364EBF200C07E2D /* NewDiningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiningTableViewCell.swift; sourceTree = "<group>"; };
+		E9229DDC2364EBF200C07E2D /* NewDiningTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDiningTableViewCell.xib; sourceTree = "<group>"; };
+		E9229DDF2364FF4300C07E2D /* FetchDiningRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDiningRestaurantsViewController.swift; sourceTree = "<group>"; };
+		E9229DE12365207400C07E2D /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
+		E92A1B70234CF369004D63EC /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +97,14 @@
 				E90822D9233412BD00F70F24 /* AppDelegate.swift */,
 				E90822ED2337D00000F70F24 /* DesignableView.swift */,
 				E90822DD233412BD00F70F24 /* WorkoutMapViewController.swift */,
+				E9229DDB2364EBF200C07E2D /* NewDiningTableViewCell.swift */,
+				E9229DDC2364EBF200C07E2D /* NewDiningTableViewCell.xib */,
+				E9229DDF2364FF4300C07E2D /* FetchDiningRestaurantsViewController.swift */,
 				E90822DF233412BD00F70F24 /* Main.storyboard */,
+				E9229DE12365207400C07E2D /* CellData.swift */,
 				E90822F923420D9B00F70F24 /* WorkoutDataManager.swift */,
 				E90822F5233F105700F70F24 /* CreateWorkoutViewController.swift */,
+				E92A1B70234CF369004D63EC /* CommunityViewController.swift */,
 				E90822E2233412C300F70F24 /* Assets.xcassets */,
 				E90822E4233412C300F70F24 /* LaunchScreen.storyboard */,
 				E90822E7233412C300F70F24 /* Info.plist */,
@@ -163,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90822E6233412C300F70F24 /* LaunchScreen.storyboard in Resources */,
+				E9229DDE2364EBF200C07E2D /* NewDiningTableViewCell.xib in Resources */,
 				E90822E3233412C300F70F24 /* Assets.xcassets in Resources */,
 				E90822E1233412BD00F70F24 /* Main.storyboard in Resources */,
 			);
@@ -224,7 +240,11 @@
 			files = (
 				E90822EE2337D00000F70F24 /* DesignableView.swift in Sources */,
 				E90822DE233412BD00F70F24 /* WorkoutMapViewController.swift in Sources */,
+				E9229DE22365207400C07E2D /* CellData.swift in Sources */,
+				E92A1B71234CF369004D63EC /* CommunityViewController.swift in Sources */,
+				E9229DE02364FF4300C07E2D /* FetchDiningRestaurantsViewController.swift in Sources */,
 				E90822FA23420D9C00F70F24 /* WorkoutDataManager.swift in Sources */,
+				E9229DDD2364EBF200C07E2D /* NewDiningTableViewCell.swift in Sources */,
 				E90822F6233F105700F70F24 /* CreateWorkoutViewController.swift in Sources */,
 				E90822DA233412BD00F70F24 /* AppDelegate.swift in Sources */,
 			);
