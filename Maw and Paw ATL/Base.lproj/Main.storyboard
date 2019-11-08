@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Action Step-->
+        <!--New Action-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="CreateWorkoutViewController" customModule="Maw_and_Paw_ATL" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,10 +23,10 @@
                                 <viewLayoutGuide key="safeArea" id="xbS-ae-Gw2"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                        <color key="value" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="80" id="IvX-KE-LBc"/>
                                     <constraint firstAttribute="height" constant="80" id="Yyo-TF-KOk"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="stopButton-1"/>
+                                <state key="normal" title="Button" image="stopButtonRed"/>
                                 <connections>
                                     <action selector="stopWorkout:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uAt-7o-iLw"/>
                                 </connections>
@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="80" id="fYV-Bd-Gj7"/>
                                     <constraint firstAttribute="height" constant="80" id="hLW-RN-9YO"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="pauseButton-1"/>
+                                <state key="normal" title="Button" image="pauseButtonRed"/>
                                 <connections>
                                     <action selector="pauseWorkout" destination="9pv-A4-QxB" eventType="touchUpInside" id="7fr-Ut-OLk"/>
                                 </connections>
@@ -57,7 +57,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="oHv-UN-P8O"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="playButton-1"/>
+                                <state key="normal" title="Button" image="playButtonRed"/>
                                 <connections>
                                     <action selector="toggleWorkout" destination="9pv-A4-QxB" eventType="touchUpInside" id="MQu-GV-1Or"/>
                                 </connections>
@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="height" constant="48" id="EHA-EL-xyH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Steps" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5E-06-0i8">
@@ -120,7 +120,7 @@
                                     <constraint firstAttribute="height" constant="48" id="vbJ-ch-g9M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 m/s" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krR-YZ-18Z">
@@ -130,7 +130,7 @@
                                     <constraint firstAttribute="width" constant="165" id="qcF-Hk-vYj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Floors" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcs-Fz-4ZT">
@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="height" constant="48" id="kgJ-ol-rMG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bON-rT-d8H">
@@ -150,11 +150,10 @@
                                     <constraint firstAttribute="width" constant="374" id="bYo-Og-Wdv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="55"/>
-                                <color key="textColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="6" height="6"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogKidLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-z2-P2i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-z2-P2i">
                                 <rect key="frame" x="20" y="558" width="374" height="255"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="L88-zi-TY3"/>
@@ -163,7 +162,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeI-qo-p6k">
                                 <rect key="frame" x="127" y="446" width="5" height="48"/>
-                                <color key="backgroundColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.070588235289999995" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="5" id="D83-B9-RZS"/>
                                     <constraint firstAttribute="height" constant="48" id="FHg-hl-bpA"/>
@@ -171,7 +170,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQx-U4-4HB">
                                 <rect key="frame" x="275" y="446" width="5" height="48"/>
-                                <color key="backgroundColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.070588235289999995" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="5fH-pO-L5U"/>
                                     <constraint firstAttribute="width" constant="5" id="Kdj-Ay-Xtz"/>
@@ -213,6 +212,7 @@
                             <constraint firstItem="Thn-R9-5fk" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="axD-pS-H40"/>
                             <constraint firstItem="Pcs-Fz-4ZT" firstAttribute="firstBaseline" secondItem="Y5E-06-0i8" secondAttribute="firstBaseline" id="c6x-n7-Vw2"/>
                             <constraint firstItem="n3U-Em-fJo" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="d3S-Lc-dxA"/>
+                            <constraint firstItem="6Y5-MM-VFf" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="16.5" id="dT1-qP-5sM"/>
                             <constraint firstItem="x2i-yQ-b0A" firstAttribute="top" secondItem="JgM-3Z-z5p" secondAttribute="bottom" constant="15" id="dUt-si-OU1"/>
                             <constraint firstItem="EW6-CN-ka6" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="dtr-jC-yHX"/>
                             <constraint firstItem="EW6-CN-ka6" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="gtj-IQ-dqA"/>
@@ -233,7 +233,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New Action Step" image="icons8-bodybuilder-50" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="New Action" image="icons8-bodybuilder-50" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="pauseWorkoutButton" destination="n3U-Em-fJo" id="BQH-RB-3e9"/>
                         <outlet property="stopWorkoutButton" destination="JgM-3Z-z5p" id="x3m-Bd-n7w"/>
@@ -285,8 +285,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.89833527803421021" green="0.77626687288284302" blue="0.26336544752120972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -299,7 +299,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Recent Purchases-->
+        <!--Recent Orders-->
         <scene sceneID="Va3-kO-vRJ">
             <objects>
                 <viewController id="2NT-nu-uyO" sceneMemberID="viewController">
@@ -309,13 +309,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nqt-Mh-0tV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recent Purchases" image="icons8-smiling-face-with-heart-50" id="eUE-h5-Zw0"/>
+                    <tabBarItem key="tabBarItem" title="Recent Orders" image="icons8-smiling-face-with-heart-50" id="eUE-h5-Zw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDo-AT-hD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="772" y="370"/>
         </scene>
-        <!--Fetch New Dining-->
+        <!--Play Fetch-->
         <scene sceneID="lZn-Kv-yKA">
             <objects>
                 <viewController id="fcP-gc-1CF" customClass="FetchDiningRestaurantsViewController" customModule="Maw_and_Paw_ATL" customModuleProvider="target" sceneMemberID="viewController">
@@ -331,7 +331,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                        <color key="value" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.8980392157" green="0.1764705882" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -342,11 +342,11 @@
                                 <rect key="frame" x="20" y="44" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
-                                <color key="textColor" red="0.89833527800000001" green="0.77626687289999996" blue="0.26336544750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sFp-rZ-3Qd">
-                                <rect key="frame" x="0.0" y="99" width="414" height="213"/>
+                                <rect key="frame" x="0.0" y="99" width="414" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6q-7v-pqr">
@@ -357,6 +357,7 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f64-Hy-qZW">
                                 <rect key="frame" x="0.0" y="314" width="414" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.070588235289999995" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="Japanese"/>
                                     <segment title="Soul Food"/>
@@ -375,7 +376,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qq0-bd-T8F"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fetch New Dining" image="icons8-dog-training-50" id="U9b-sC-fp5"/>
+                    <tabBarItem key="tabBarItem" title="Play Fetch" image="icons8-dog-training-50" id="U9b-sC-fp5"/>
                     <connections>
                         <outlet property="cuisineSegmentBar" destination="f64-Hy-qZW" id="RMl-7N-ghA"/>
                         <outlet property="currentGlucoseLabel" destination="H3g-SM-8bh" id="DAh-mM-fiU"/>
@@ -387,18 +388,18 @@
             </objects>
             <point key="canvasLocation" x="2357.971014492754" y="369.64285714285711"/>
         </scene>
-        <!--Insurance Points-->
+        <!--Points-->
         <scene sceneID="DNH-N9-EOw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A5Z-lu-wSl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Insurance Points" image="icons8-prize-50" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Points" image="icons8-prize-50" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yfA-r6-OA8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="0.8755933642" green="0.38376367090000002" blue="0.1994339228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.70196078429999997" green="0.070588235289999995" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -412,13 +413,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DogKidLogo2" width="727" height="692"/>
         <image name="icons8-bodybuilder-50" width="30" height="30"/>
         <image name="icons8-dog-training-50" width="30" height="30"/>
         <image name="icons8-prize-50" width="30" height="30"/>
         <image name="icons8-smiling-face-with-heart-50" width="30" height="30"/>
-        <image name="pauseButton-1" width="289" height="289"/>
-        <image name="playButton-1" width="289" height="289"/>
-        <image name="stopButton-1" width="289" height="289"/>
+        <image name="pauseButtonRed" width="289" height="289"/>
+        <image name="playButtonRed" width="289" height="289"/>
+        <image name="stopButtonRed" width="289" height="289"/>
     </resources>
 </document>

@@ -18,31 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogKidLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-gH-MA3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redNose" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-gH-MA3">
                                 <rect key="frame" x="8" y="252" width="359" height="296"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="359" id="4tv-Te-cVQ"/>
                                     <constraint firstAttribute="height" constant="296" id="vrQ-gx-PTG"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mySpotLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qME-kE-pWM">
-                                <rect key="frame" x="8" y="103" width="359" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet Spot." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-wj-OUn">
+                                <rect key="frame" x="16" y="72.5" width="351" height="95.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="76X-po-FH8"/>
-                                    <constraint firstAttribute="width" constant="359" id="Wfs-Jj-fGT"/>
-                                    <constraint firstAttribute="height" constant="74" id="fED-Va-I5J"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="ioV-IP-bgY"/>
+                                    <constraint firstAttribute="width" constant="351" id="eHn-mp-e12"/>
+                                    <constraint firstAttribute="height" constant="95.5" id="occ-L5-3LP"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Iat-gH-MA3" firstAttribute="top" secondItem="qME-kE-pWM" secondAttribute="bottom" constant="75" id="4d2-ca-QQV"/>
-                            <constraint firstItem="Iat-gH-MA3" firstAttribute="leading" secondItem="qME-kE-pWM" secondAttribute="leading" id="7Pq-pJ-M3N"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qME-kE-pWM" secondAttribute="trailing" constant="8" id="KpP-MZ-ZRu"/>
-                            <constraint firstItem="qME-kE-pWM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="PGH-Gj-vHk"/>
-                            <constraint firstItem="qME-kE-pWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="VdA-xP-0Me"/>
-                            <constraint firstItem="Iat-gH-MA3" firstAttribute="top" secondItem="qME-kE-pWM" secondAttribute="bottom" constant="75" id="qM8-PY-M0w"/>
+                            <constraint firstItem="wzR-wj-OUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52.5" id="3RO-OT-Xbi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wzR-wj-OUn" secondAttribute="trailing" constant="8" id="9ko-2f-8o4"/>
+                            <constraint firstItem="Iat-gH-MA3" firstAttribute="top" secondItem="wzR-wj-OUn" secondAttribute="bottom" constant="84" id="AxF-zD-dJp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iat-gH-MA3" secondAttribute="trailing" constant="8" id="MNu-E2-cRc"/>
+                            <constraint firstItem="Iat-gH-MA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="a6d-yR-AyK"/>
+                            <constraint firstItem="Iat-gH-MA3" firstAttribute="top" secondItem="wzR-wj-OUn" secondAttribute="bottom" constant="84" id="h2A-K4-7SH"/>
+                            <constraint firstItem="wzR-wj-OUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tJo-rA-rQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Iat-gH-MA3" secondAttribute="bottom" constant="119" id="yP1-ss-764"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -53,7 +56,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DogKidLogo2" width="727" height="692"/>
-        <image name="mySpotLogo" width="600" height="110"/>
+        <image name="redNose" width="794" height="697"/>
     </resources>
 </document>
